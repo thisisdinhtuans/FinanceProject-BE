@@ -33,5 +33,7 @@ namespace api.Mappers
                 MarketCap=stockDto.MarketCap,
             };
         }
+
+        
     }
 }
