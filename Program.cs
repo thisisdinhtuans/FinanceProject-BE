@@ -23,7 +23,7 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
 builder.Services.AddDbContext<ApplicationDbContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
-
+//yêu cầu mật khẩu có đủ số, chữ thường, chữ hoa, yêu cầu không phải chữ hoặc số, độ dài 12. 
 builder.Services.AddIdentity<AppUser, IdentityRole>(options => {
     options.Password.RequireDigit=true;
     options.Password.RequireLowercase=true;
@@ -33,6 +33,7 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options => {
 })
 .AddEntityFrameworkStores<ApplicationDbContext>();
 
+//thêm jwt
 builder.Services.AddAuthentication(options => {
     options.DefaultAuthenticateScheme=
     options.DefaultChallengeScheme=
@@ -40,7 +41,8 @@ builder.Services.AddAuthentication(options => {
     options.DefaultScheme=
     options.DefaultSignInScheme=
     options.DefaultSignOutScheme= JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(
+})
+.AddJwtBearer(
     options=>{
         options.TokenValidationParameters=new TokenValidationParameters {
             ValidateIssuer=true,
