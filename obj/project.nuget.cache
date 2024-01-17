@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "GPJ5R3v8G2OBr1WMW+FrinPC7+J4Iy80VWyZaUJPZ8Oz3q1qecdoRq0ZiIIrFvnyiu+BBO/1sQ5jKJz7ge5+qw==",
+  "dgSpecHash": "J62+66e/n5EMTXLR12x7+Wu5Mkn+1TPiLFdeppLqyAG2tcz49wVFUmuvmhbJJKIneyrftshXgLB9VIOFdYK71A==",
   "success": true,
   "projectFilePath": "D:\\FINSHARK\\api\\api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\AD\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\AD\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\AD\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\AD\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\AD\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -7,6 +7,8 @@ using api.Dtos.Stock;
 using api.Helpers;
 using api.Interfaces;
 using api.Mappers;
+using api.Models;
+using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -19,10 +21,23 @@ namespace api.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly IStockRepository _stockRepo;
-        public StockController(ApplicationDbContext context,IStockRepository stockRepo)
+        private readonly IMapper _mapper;
+
+        public StockController(ApplicationDbContext context,IStockRepository stockRepo, IMapper mapper)
         {
             _context=context;
             _stockRepo=stockRepo;
+            _mapper=mapper;
+        }
+        [HttpGet("All")]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Stock>))]
+        public IActionResult GetComments()
+        {
+            var stocks = _stockRepo.GetStocksAsync();
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            return Ok(stocks);
         }
         [HttpGet]
         [Authorize]

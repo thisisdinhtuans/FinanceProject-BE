@@ -142,3 +142,5 @@ D:\FINSHARK\api\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\FINSHARK\api\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
 D:\FINSHARK\api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\FINSHARK\api\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\FINSHARK\api\bin\Debug\net8.0\AutoMapper.dll
+D:\FINSHARK\api\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
