@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J62+66e/n5EMTXLR12x7+Wu5Mkn+1TPiLFdeppLqyAG2tcz49wVFUmuvmhbJJKIneyrftshXgLB9VIOFdYK71A==",
+  "dgSpecHash": "BTUtpxAF3kfsGWfz7KYJQ42rF/LRXkSGUCvYmVSkFX/MLWi5Yn5VKeA6yzEimNcXjJBm9BFF+KfS0EskvC4b1w==",
   "success": true,
-  "projectFilePath": "D:\\FINSHARK\\api\\api.csproj",
+  "projectFilePath": "D:\\.NET Learn Youtube\\TeddySmith\\FINSHARK\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AD\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\AD\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

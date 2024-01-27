@@ -37,6 +37,15 @@ namespace api.Controllers
             var stockDto=stocks.Select(s=>s.ToStockDto());
             return Ok(stockDto);
         }
+        [HttpGet("All")]
+        public async Task<IActionResult>  GetAllStock() {
+            if(!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var stocks=await _stockRepo.GetAllStockAsync();
+            var stockDto=stocks.Select(s=>s.ToStockDto());
+            return Ok(stockDto);
+        }
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetById([FromRoute] int id) {
             if(!ModelState.IsValid)
