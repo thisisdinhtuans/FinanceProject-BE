@@ -4672,11 +4672,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FINSHARK\\api\\api.csproj",
+      "projectUniqueName": "D:\\.NET Learn Youtube\\TeddySmith\\FINSHARK\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "D:\\FINSHARK\\api\\api.csproj",
+      "projectPath": "D:\\.NET Learn Youtube\\TeddySmith\\FINSHARK\\api\\api.csproj",
       "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
-      "outputPath": "D:\\FINSHARK\\api\\obj\\",
+      "outputPath": "D:\\.NET Learn Youtube\\TeddySmith\\FINSHARK\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\AD\\AppData\\Roaming\\NuGet\\NuGet.Config",
