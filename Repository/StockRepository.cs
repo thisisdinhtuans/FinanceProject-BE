@@ -64,13 +64,13 @@ namespace api.Repository
 
         public async Task<List<Stock>> GetAllStockAsync()
         {
-            return await _context.Stocks.Include(c=>c.Comments).ToListAsync();
+            return await _context.Stocks.Include(c=>c.Comments).ThenInclude(a => a.AppUser).ToListAsync();
             
         }
 
         public async Task<Stock?> GetByIdAsync(int id)
         {
-            return await _context.Stocks.Include(c=>c.Comments).FirstOrDefaultAsync(i=>i.Id==id);
+            return await _context.Stocks.Include(c=>c.Comments).ThenInclude(a => a.AppUser).FirstOrDefaultAsync(i=>i.Id==id);
         }
 
         public async Task<Stock?> GetBySymbolAsync(string symbol)
