@@ -29,9 +29,9 @@ namespace api.Controllers
         public async Task<IActionResult> Login(LoginDto loginDto) {
             if(!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var user=await _userManager.Users.FirstOrDefaultAsync(x=>x.UserName== loginDto.Username.ToLower());
-
+            var user=await _userManager.Users.FirstOrDefaultAsync(x=>x.UserName == loginDto.Username.ToLower());
             if(user == null) return Unauthorized("Invalid username!");
+
             var result=await _signinMannager.CheckPasswordSignInAsync(user, loginDto.Password, false);
             if(!result.Succeeded) return Unauthorized("Username not found and/or password incorrect");
             return Ok(new NewUserDto{
